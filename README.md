@@ -32,5 +32,4 @@ This function first will add a linear phase ramp to the B1e array:
   Below is an at isocenter example and another example exciting 4mm away from isocenter:
   
   ![](/images/0mmOffIsoCenterB1Plot.jpg)
-  ![alt text](<./sliceSelectionDemo/0mmOffIsoCenterB1Plot.jpeg>)
-  ![alt text](https://github.com/faa5115/blochSimulations/sliceSelectionDemo/neg4mmOffIsoCenterB1Plot.jpeg)
+  ![](images/neg4mmOffIsoCenterB1Plot.jpg)
