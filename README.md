@@ -33,3 +33,7 @@ This function first will add a linear phase ramp to the B1e array:
   
   ![](/images/0mmOffIsoCenterB1Plot.jpg)
   ![](images/neg4mmOffIsoCenterB1Plot.jpg)
+  
+ For each timepoint for the RF pulse, every magnetization will be exposed to a magnetic field whose components will be givine by the B1 on the transverse plane, and slice select gradient and inhomogeneity along the longitudinal axis as illustrated below:
+ ![](images/MagneticFieldExcitationComponents.png)
+ 
