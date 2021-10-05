@@ -31,5 +31,5 @@ This function first will add a linear phase ramp to the B1e array:
   So B1ea will be the RF pulse having the set excitaiton phase and specifying which location along the slice select axis to excite.  
   Below is an at isocenter example and another example exciting 4mm away from isocenter:
   
-  ![alt text](https://github.com/faa5115/blochSimulations/sliceSelectionDemo/0mmOffIsoCenterB1Plot.tif)
-  ![alt text](https://github.com/faa5115/blochSimulations/sliceSelectionDemo/neg4mmOffIsoCenterB1Plot.tif)
+  ![alt text](https://github.com/faa5115/blochSimulations/sliceSelectionDemo/0mmOffIsoCenterB1Plot.jpeg)
+  ![alt text](https://github.com/faa5115/blochSimulations/sliceSelectionDemo/neg4mmOffIsoCenterB1Plot.jpeg)
