@@ -29,7 +29,7 @@ This function first will add a linear phase ramp to the B1e array:
   B1e = B1ea ;
   
   So B1ea will be the RF pulse having the set excitaiton phase and specifying which location along the slice select axis to excite.  
-  Below is an at isocenter example and another example exciting 4mm away from isocenter:
+  Below is an at isocenter example and another example exciting 4mm away from isocenter (both with a ninety degree flip angle):
   
   ![](/images/0mmOffIsoCenterB1Plot.jpg)
   ![](images/neg4mmOffIsoCenterB1Plot.jpg)
@@ -37,3 +37,6 @@ This function first will add a linear phase ramp to the B1e array:
  For each timepoint for the RF pulse, every magnetization will be exposed to a magnetic field whose components will be givine by the B1 on the transverse plane, and slice select gradient and inhomogeneity along the longitudinal axis as illustrated below:
  ![](images/MagneticFieldExcitationComponents.png)
  
+These components change at each time point as the B1 changes throughout time (we only have flat-top gradients during this time and we don't have the spins moving in this simulation, but please feel free to adjust so if you'd like). 
+Output of this function, M, is a (number of slice points x 3 x number of RF time points) matrix that holds the magnetization components for every slice point, for each time point of the excitation.  The final time point holds the through-slice magnetization distribution *before* the upcoming refocusing: 
+![](images/0mmOffIsoCenter_preRefocus.jpg)
