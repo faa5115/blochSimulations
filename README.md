@@ -77,6 +77,14 @@ With the exception of the digital phantom and uniform excitation on this planar 
  
  ![](images/prephasingPictures.png)
 
+The sequence kernel is played out on every spin, all while the spin is pursuing T1 recovery, T2 decay, and off-resonant rotation.  Here is the k-space below:
+![](images/kspace_bssfp_ropey.jpg)
+If we do not modulate the ADC with the RF phase's increase, the following occurs:  
+ ![](images/image_bSSFP_ROPEy_shift.jpg)
+ 
+ This makes sense.  bSSFP's kernel has a linear RF phase ramp of pi radians/repetition. Not having the ADC modulate for this phase accumulation has a linearly increasing phase by pi radians/line of k space along the phase-encoding direction.  by the linear-shift Fourier theorem, this linear phase-ramp in k-space will have a spatial shift in the image domain along the pey direction.  To accomodate for this, this added phase must be subtracted, much in the same way how the ADC is tuned to the RF's phase before it receives.  Here is the Bloch-Simulated MR image without the linear spatial shift: 
+ 
+ ![](images/image_bSSFP_ROPEy.jpg)
 ## planar SPGRE (Spoilged Gradient Recalled Echo).
 This was done to understand to understand spoiled gradient recalled echo.  The spoiling is RF induced but we also do gradient dephased (even though it does seem pointless in my opinion ... but i can talk about those later ... i love RF spoiling and that works fine ... but anyway I don't want to get off topic from this code ...). 
 
