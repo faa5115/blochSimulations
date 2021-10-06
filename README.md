@@ -54,4 +54,6 @@ Output of this function, M, is a (number of slice points x 3 x number of RF time
                           T1, T2:  in seconds
                           dFArr:  same as before:  array  of off-resonance values (in Hz) for each spatial locatoin along the slice direction. 
                    
-Similar to the the slice selection function, each spin will precess around the magnetic field it feels, this time only feeling the slice-select's refocusing lobe in addition to the inherent off-resonance it has.  Therefore the spins will rotate around the longitudinal axis.  
+Similar to the the slice selection function, each spin will precess around the magnetic field it feels, this time only feeling the slice-select's refocusing lobe in addition to the inherent off-resonance it has.  Therefore the spins will rotate around the longitudinal axis.  The final result will have the spins in phase (or mostly so).  The first image is for 0mm off isocenter and the second is for a scenario with 4mm off of isocenter both with a 6mm slice thickness. 
+![](images/0mmOffIsoCenter_IndicateThickness.png)
+![](images/neg4mmOffIsoCenter_IndicateThickness.png)
